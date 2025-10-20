@@ -20,30 +20,37 @@ The agent can see your screen, control your mouse and keyboard, and make intelli
 
 Before you begin, you'll need:
 
-- A **Cua account** and active sandbox 
+- A **Cua account** and active sandbox
 - An **OpenAI API key** with access to the computer-use model
 - **uv** package manager (we'll help you install it if needed)
 
 ### Step 1: Set up your environment
 
-1. **Copy the environment template:**
+1. **Clone this repository:**
+
+   ```bash
+   git clone https://github.com/trycua/agent-template.git
+   cd agent-template
+   ```
+
+2. **Copy the environment template:**
 
    ```bash
    cp .env.example .env
    ```
 
-2. **Start your virtual machine:**
+3. **Start your virtual machine:**
 
    - Go to [Cua Dashboard](https://www.cua.ai/dashboard/sandboxes)
    - Make sure your sandbox is running (you'll see a green status indicator)
 
-3. **Configure your API keys:**
+4. **Configure your API keys:**
 
    - Open the `.env` file in your favorite editor
    - Fill in your `CUA_API_KEY`, `CUA_SANDBOX_NAME`, and `OPENAI_API_KEY`
    - Save the file
 
-4. **Install dependencies:**
+5. **Install dependencies:**
    ```bash
    uv sync
    ```
