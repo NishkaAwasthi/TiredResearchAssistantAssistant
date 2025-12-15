@@ -1,33 +1,5 @@
-"""
-CUA Agent demo:
-- Scrape 2 real SLC structures from RCSB
-- Append mock rows to scale dataset for visualization
-"""
-
-import asyncio
-import logging
-import os
-import traceback
-import signal
-import random
-
-from datetime import date, timedelta
-from computer import Computer, VMProviderType
-from agent import ComputerAgent
-from utils import load_dotenv_files, handle_sigint
-
-# ------------------------------------------------------------
-# Logging
-# ------------------------------------------------------------
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-
-# ------------------------------------------------------------
-# Config
-# ------------------------------------------------------------
-SCRAPED_SLC_GENES = [
-    "SLC6A1",
-    "SLC6A3",
+"""¿A3",
+"""¿A3",
 ]
 
 CSV_HEADERS = [
@@ -47,6 +19,7 @@ GENES = [f"SLC6A{i}" for i in range(1, 101)]  # 100 distinct genes
 METHODS = [
     "ELECTRON MICROSCOPY",
     "X-RAY DIFFRACTION",
+    
 ]
 
 ORGANISMS = [
@@ -145,7 +118,7 @@ async def run_agent():
             tools=[computer],
             only_n_most_recent_images=2,
             verbosity=logging.INFO,
-            use_prompt_caching=True,
+            use_prompt_caching=False,
             max_trajectory_budget=0.6,
         )
 
