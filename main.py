@@ -19,7 +19,6 @@ GENES = [f"SLC6A{i}" for i in range(1, 101)]  # 100 distinct genes
 METHODS = [
     "ELECTRON MICROSCOPY",
     "X-RAY DIFFRACTION",
-    
 ]
 
 ORGANISMS = [
