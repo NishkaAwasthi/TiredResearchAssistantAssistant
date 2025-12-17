@@ -66,6 +66,7 @@ for gene in MOCK_GENES:
 
         MOCK_SLC_ROWS.append(
             f"{gene},"
+            
             f"{random_pdb_id()},"
             f"{method},"
             f"{resolution},"
