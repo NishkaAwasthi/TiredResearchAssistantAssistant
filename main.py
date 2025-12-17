@@ -65,8 +65,7 @@ for gene in MOCK_GENES:
         current_day_offset += random.randint(20, 90)
 
         MOCK_SLC_ROWS.append(
-            f"{gene},"
-            
+            f"{gene},"   
             f"{random_pdb_id()},"
             f"{method},"
             f"{resolution},"
